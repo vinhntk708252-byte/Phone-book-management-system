@@ -1,4 +1,4 @@
-# Phụ trách: Nguyễn Trần Khánh Vinh (Leader - Cặp C)
+# Phụ trách: Nguyễn Trần Khánh Vinh
 
 import os
 import sys
@@ -114,13 +114,12 @@ class PhoneBookApp:
         }
         if key in screens:
             screens[key]()
-
+            
     def handle_logout(self):
         if messagebox.askyesno("Logout", "Are you sure you want to log out?"):
             self.session.clear_session()
             self.current_user = self.current_role = None
             self.login_dashboard_view.render_login_screen()
-
 
 if __name__ == "__main__":
     root = tk.Tk()
